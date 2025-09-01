@@ -1,3 +1,4 @@
+import { Navbar } from "@/components/navbar"
 import { ThemeProvider } from "@/components/providers/theme-provider"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
@@ -35,6 +36,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="flex h-[100dvh] grow flex-col overflow-auto">
+            <Navbar />
             {children}
           </div>
         </ThemeProvider>
